@@ -4,7 +4,7 @@ var txt = document.getElementById("msg");
 var imagem = document.getElementById("foto");
 var h3 = document.getElementById("copy");
 txt.innerHTML = `Agora são ${hora} horas!!`;
-if (hora > 6 && hora < 12) {
+if (hora >= 6 && hora < 12) {
 //DIA
     document.body.style.background = "#dbdfa5";
     imagem.src = "assets/img/dia.jpg";
@@ -17,8 +17,9 @@ if (hora > 6 && hora < 12) {
     document.body.style.background = "#333";
     imagem.src = "assets/img/noite.jpg";
     h3.style.color = "white";
-} else {
+} else if (hora >= 0 && hora < 6) {
 //MADRUGADA
-    document.body.style.background = "";
-    imagem.src = "";
+    document.body.style.background = "black";
+    imagem.src = "assets/img/madrugada.jpg";
+    h3.style.color = "white"
 } 
