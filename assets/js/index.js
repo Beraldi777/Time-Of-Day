@@ -1,8 +1,8 @@
-var data = new Date();
-var hora = data.getHours();
-var txt = document.getElementById("msg");
-var imagem = document.getElementById("foto");
-var h3 = document.getElementById("copy");
+let data = new Date();
+let hora = data.getHours();
+let txt = document.getElementById("msg");
+let imagem = document.getElementById("foto");
+let h3 = document.getElementById("copy");
 txt.innerHTML = `Agora são ${hora} horas!!`;
 if (hora >= 6 && hora < 12) {
 //DIA
